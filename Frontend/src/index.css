@@ -1,0 +1,81 @@
+/* base reset and design tokens: flat, slate + green */
+:root {
+  --ink: #0f172a;
+  --ink-2: #334155;
+  --muted: #475569;
+  --paper: #f8fafc;
+  --surface: #ffffff;
+  --line: #e2e8f0;
+  --line-strong: #cbd5e1;
+  --accent: #047857;
+  --accent-strong: #065f46;
+  --accent-soft: #e2e8f0;
+  --slate: #1e293b;
+  --good: #047857;
+  --good-soft: #d1fae5;
+  --bad: #b91c1c;
+  --bad-soft: #fee2e2;
+  --warn: #92400e;
+  --warn-soft: #fef3c7;
+  --radius: 6px;
+  --radius-sm: 4px;
+  --font-body: "Open Sans", "Segoe UI", Arial, system-ui, sans-serif;
+  --font-head: "Open Sans", "Segoe UI", Arial, system-ui, sans-serif;
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 15px;
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-head);
+  font-weight: 700;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--accent-strong);
+}
+
+:focus-visible {
+  outline: 2px solid var(--ink-2);
+  outline-offset: 2px;
+}
+
+button,
+a,
+select,
+input[type="date"],
+input[type="file"] {
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

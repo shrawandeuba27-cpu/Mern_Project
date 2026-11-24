@@ -34,7 +34,7 @@ const Signup = () => {
     setLoading(true);
     try {
       const result = await axios({
-        url: "http://localhost:8000/user/signup",
+        url: "/user/signup",
         method: "POST",
         data: {
           name: name,

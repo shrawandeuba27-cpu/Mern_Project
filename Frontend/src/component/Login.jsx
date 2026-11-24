@@ -23,7 +23,7 @@ const Login = () => {
     setLoading(true);
     try {
       const result = await axios({
-        url: "http://localhost:8000/user/login",
+        url: "/user/login",
         method: "POST",
         data: { email: email, password: password },
       });

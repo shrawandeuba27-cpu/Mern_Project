@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // Same backend URL the project already used everywhere.
-export const API = "http://localhost:8000";
+export const API = "";
 
 // The backend only accepts these five categories (see productSchema.js).
 export const CATEGORIES = ["Electronics", "Clothing", "Food", "Accessories", "Other"];
